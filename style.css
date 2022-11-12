@@ -6,6 +6,7 @@
 
 html, body {
     width: 100%;
+    height: 100%;
 }
 
 body {
@@ -109,9 +110,10 @@ footer {
     .gallery-grid { gap: 1rem; }
 }
 @media screen and (max-width: 767px) and (orientation: portrait) {
-
     .gallery-grid {
-        grid-template-columns: auto;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        grid-auto-rows: 25%;
     }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
